@@ -128,6 +128,11 @@ typedef TinyGsmA7672X                        TinyGsm;
 typedef TinyGsmA7672X::GsmClientA7672X       TinyGsmClient;
 typedef TinyGsmA7672X::GsmClientSecureA7672X TinyGsmClientSecure;
 
+#elif defined(TINY_GSM_MODEM_SIMA7663E)
+#include "TinyGsmClientSIMA7663E.h"
+typedef TinyGsmSIMA7663E                        TinyGsm;
+typedef TinyGsmSIMA7663E::GsmClientSIMA7663E       TinyGsmClient;
+typedef TinyGsmSIMA7663E::GsmClientSecureSIMA7663E TinyGsmClientSecure;
 #else
 #error "Please define GSM modem model"
 #endif
